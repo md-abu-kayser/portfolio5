@@ -51,10 +51,10 @@ async function updateUserProfile(userData) {
 
     const updatedUser = await response.json();
 
-    console.log("✅ Profile updated successfully:", updatedUser);
+    console.log("Profile updated successfully:", updatedUser);
     return updatedUser;
   } catch (error) {
-    console.error("❌ Error updating user profile:", error);
+    console.error("Error updating user profile:", error);
     throw error;
   }
 }
